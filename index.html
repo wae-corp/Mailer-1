@@ -6,20 +6,75 @@
     <title>BLUEWAE VAR Email</title>
     <style type="text/css">
         /* Client-specific resets */
-        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-        img { -ms-interpolation-mode: bicubic; border: 0; }
+        body, table, td, a { 
+            -webkit-text-size-adjust: 100%; 
+            -ms-text-size-adjust: 100%; 
+        }
+        table, td { 
+            mso-table-lspace: 0pt; 
+            mso-table-rspace: 0pt; 
+        }
+        img { 
+            -ms-interpolation-mode: bicubic; 
+            border: 0; 
+            height: auto; 
+            line-height: 100%; 
+            outline: none; 
+            text-decoration: none; 
+        }
         
         /* Reset styles */
-        body { margin: 0; padding: 0; background-color: #f1f1f1; }
-        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-        table { border-collapse: collapse !important; }
-        body, #bodyTable, #bodyCell { height: 100% !important; margin: 0; padding: 0; width: 100% !important; }
+        body { 
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #f1f1f1; 
+            height: 100% !important;
+            width: 100% !important;
+        }
         
-        /* Outlook-specific styles */
+        /* Table reset styles */
+        table { 
+            border-collapse: collapse !important;
+            border-spacing: 0 !important;
+        }
+        
+        /* Mobile responsiveness fixes */
+        @media screen and (max-width: 640px) {
+            .mobile-stack { 
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            
+            /* Fix for potential spacing issues */
+            td[class="mobile-stack"] {
+                display: block !important;
+                width: 100% !important;
+                padding: 10px 0 !important;
+            }
+            
+            /* Ensure images don't break layout */
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+        
+        /* Outlook-specific fixes */
         @media all {
-            .ExternalClass { width: 100%; }
-            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+            .ExternalClass {
+                width: 100%;
+            }
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
             .apple-link a { color: inherit !important; font-family: inherit !important; font-size: inherit !important; font-weight: inherit !important; line-height: inherit !important; text-decoration: none !important; }
         }
         
@@ -27,7 +82,6 @@
         @media screen and (max-width: 640px) {
             .responsive-table { width: 100% !important; }
             .mobile-padding { padding-left: 10px !important; padding-right: 10px !important; }
-            .mobile-stack { display: block !important; width: 100% !important; }
             .mobile-center { text-align: center !important; }
             .mobile-img { height: auto !important; width: 100% !important; max-width: 100% !important; }
         }
@@ -39,6 +93,8 @@
     <tr>
     <td align="center" valign="top" width="640">
     <![endif]-->
+    
+    <!-- Single wrapper table for all content -->
     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px; margin: 0 auto;">
         <tr>
             <td>
@@ -70,7 +126,7 @@
                                                 </td>
                                                 <td>
                                                     <a href="https://www.instagram.com/wae_limited/" target="_blank">
-                                                        <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/9f6e5d9d-dcc6-4a5c-d699-523a233d7300/public" alt="Instagram" width="22" height="22" style="display: block;" />
+                                                        <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/d492e365-9710-4d7d-bd2a-0e7b553be100/public" alt="LinkeIn" width="22" height="22" style="display: block;" />
                                                     </a>
                                                 </td>
                                             </tr>
@@ -81,22 +137,29 @@
                         </td>
                     </tr>
                     
-                    <!-- Hero Image Section -->
+                    <!-- Hero Image Section - Fixed Structure -->
                     <tr>
                         <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;">
-                            <!--[if gte mso 9]>
-                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;">
-                            <v:fill type="tile" color="#ffffff" />
-                            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-                            <![endif]-->
-                            <div>
-                                <!-- Your hero image content -->
-                                <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cccaa251-dfaf-430b-d705-5339ff7aff00/public" width="640" height="519" alt="Hero Image" style="display: block; width: 100%; max-width: 640px; height: auto;" class="mobile-img" />
-                            </div>
-                            <!--[if gte mso 9]>
-                            </v:textbox>
-                            </v:rect>
-                            <![endif]-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <!--[if gte mso 9]>
+                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+                                        <tr><td align="center">
+                                        <![endif]-->
+                                        <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/cccaa251-dfaf-430b-d705-5339ff7aff00/public" 
+                                             width="640" 
+                                             height="519" 
+                                             alt="Hero Image" 
+                                             style="display: block; border: 0; width: 100%; max-width: 640px; height: auto;" 
+                                             class="mobile-img" />
+                                        <!--[if gte mso 9]>
+                                        </td></tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
@@ -105,7 +168,7 @@
                         <td align="center" bgcolor="#ffffff" style="padding: 32px 20px;">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td align="center" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; color: #000000; padding-bottom: 24px;">
+                                    <td align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; color: #000000; padding-bottom: 24px;">
                                         Ready for an upgrade?
                                     </td>
                                 </tr>
@@ -213,149 +276,138 @@
                     <!-- Product Image Section -->
                     <tr>
                         <td align="center" bgcolor="#ffffff">
-                            <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b7881a90-6e46-4a08-dc93-35416fcbf800/public" alt="VAR Product Image" width="640" style="display: block; width: 100%; max-width: 640px; height: auto;" />
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/b7881a90-6e46-4a08-dc93-35416fcbf800/public" 
+                                             alt="VAR Product Image" 
+                                             width="640" 
+                                             style="display: block; width: 100%; max-width: 640px; height: auto;" />
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                     
                     <!-- Three Column Feature Section -->
                     <tr>
                         <td align="center" bgcolor="#f5f5f5" style="background-color: #f5f5f5; padding: 30px 20px;">
-                            <!--[if gte mso 9]>
-                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;">
-                            <v:fill type="tile" color="#f5f5f5" />
-                            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-                            <![endif]-->
-                            <div>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <!-- Fast Delivery Column -->
-                                        <td align="left" valign="top" width="32%" class="mobile-stack" style="padding: 0 10px; width: 32%;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; color: #003f5f; padding-bottom: 10px;">
-                                                        Fast Delivery
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-family: Arial, sans-serif; font-size: 11px; color: #000000; line-height: 1.4; padding-bottom: 15px;">
-                                                        Choose fast delivery &amp; minimal installation charges.
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; color: #003f5f; padding-top: 10px;">
-                                                        <table border="0" cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="https://www.waecorp.com/drinking-water-stations" target="_blank" 
-                                                                       style="color: #003f5f; text-decoration: none; display: inline-block;">
-                                                                        Know More &rarr;
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        
-                                        <!-- Divider -->
-                                        <td width="2%" class="mobile-stack" style="width: 2%;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
-                                                <tr>
-                                                    <td width="1" bgcolor="#003f5f" style="font-size: 0; line-height: 0;">&nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        
-                                        <!-- Get Help Buying Column -->
-                                        <td align="left" valign="top" width="32%" class="mobile-stack" style="padding: 0 10px; width: 32%;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; color: #003f5f; padding-bottom: 10px;">
-                                                        Get Help Buying
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-family: Arial, sans-serif; font-size: 11px; color: #000000; line-height: 1.4; padding-bottom: 15px;">
-                                                        Have a question? Call our water expert or chat online.<br />
-                                                        Call- 0120-4069800
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; color: #003f5f; padding-top: 10px;">
-                                                        <table border="0" cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="https://www.waecorp.com/drinking-water-stations" target="_blank" 
-                                                                       style="color: #003f5f; text-decoration: none; display: inline-block;">
-                                                                        Know More &rarr;
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        
-                                        <!-- Divider -->
-                                        <td width="2%" class="mobile-stack" style="width: 2%;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
-                                                <tr>
-                                                    <td width="1" bgcolor="#003f5f" style="font-size: 0; line-height: 0;">&nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        
-                                        <!-- Free Demo Column -->
-                                        <td align="left" valign="top" width="32%" class="mobile-stack" style="padding: 0 10px; width: 32%;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; color: #003f5f; padding-bottom: 10px;">
-                                                        Free* Demo
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-family: Arial, sans-serif; font-size: 11px; color: #000000; line-height: 1.4; padding-bottom: 15px;">
-                                                        Contact us for no-obligation Demo.
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; color: #003f5f; padding-top: 10px;">
-                                                        <table border="0" cellpadding="0" cellspacing="0">
-                                                            <tr>
-                                                                <td>
-                                                                    <a href="https://www.waecorp.com/drinking-water-stations" target="_blank" 
-                                                                       style="color: #003f5f; text-decoration: none; display: inline-block;">
-                                                                        Know More &rarr;
-                                                                    </a>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!--[if gte mso 9]>
-                            </v:textbox>
-                            </v:rect>
-                            <![endif]-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <!-- Fast Delivery Column -->
+                                    <td align="left" valign="top" width="32%" class="mobile-stack" style="padding: 0 10px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; color: #003f5f; padding-bottom: 10px;">
+                                                    Fast Delivery
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: Arial, sans-serif; font-size: 11px; color: #000000; line-height: 1.4; padding-bottom: 15px;">
+                                                    Choose fast delivery &amp; minimal installation charges.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 10px;">
+                                                    <a href="https://www.waecorp.com/drinking-water-stations" target="_blank" 
+                                                       style="font-family: Arial, sans-serif; font-size: 13px; font-weight: 600; color: #003f5f; text-decoration: none;">
+                                                        Know More &rarr;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    
+                                    <!-- Divider -->
+                                    <td width="2%" style="width: 2%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="1" bgcolor="#003f5f"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    
+                                    <!-- Get Help Buying Column -->
+                                    <td align="left" valign="top" width="32%" class="mobile-stack" style="padding: 0 10px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; color: #003f5f; padding-bottom: 10px;">
+                                                    Get Help Buying
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: Arial, sans-serif; font-size: 11px; color: #000000; line-height: 1.4; padding-bottom: 15px;">
+                                                    Have a question? Call our water expert or chat online.<br />
+                                                    Call- 0120-4069800
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 10px;">
+                                                    <a href="https://www.waecorp.com/drinking-water-stations" target="_blank" 
+                                                       style="font-family: Arial, sans-serif; font-size: 13px; font-weight: 600; color: #003f5f; text-decoration: none;">
+                                                        Know More &rarr;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    
+                                    <!-- Divider -->
+                                    <td width="2%" style="width: 2%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="1" bgcolor="#003f5f"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    
+                                    <!-- Free Demo Column -->
+                                    <td align="left" valign="top" width="32%" class="mobile-stack" style="padding: 0 10px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; color: #003f5f; padding-bottom: 10px;">
+                                                    Free* Demo
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: Arial, sans-serif; font-size: 11px; color: #000000; line-height: 1.4; padding-bottom: 15px;">
+                                                    Contact us for no-obligation Demo.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 10px;">
+                                                    <a href="https://www.waecorp.com/drinking-water-stations" target="_blank" 
+                                                       style="font-family: Arial, sans-serif; font-size: 13px; font-weight: 600; color: #003f5f; text-decoration: none;">
+                                                        Know More &rarr;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
-                    
                     <!-- Footer Section -->
                     <tr>
                         <td align="center" bgcolor="#ffffff">
-                            <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ee1f6442-048b-4472-99aa-50f904568d00/public" alt="Footer" width="640" style="display: block; width: 100%; max-width: 640px; height: auto;" />
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <img src="https://imagedelivery.net/R9aLuI8McL_Ccm6jM8FkvA/ee1f6442-048b-4472-99aa-50f904568d00/public" 
+                                             alt="Footer" 
+                                             width="640" 
+                                             style="display: block; width: 100%; max-width: 640px; height: auto;" />
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
+    
     <!--[if (gte mso 9)|(IE)]>
     </td>
     </tr>
